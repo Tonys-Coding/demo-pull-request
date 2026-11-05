@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UTD Student Starter Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="#top">UTD / Student Starter Kit</a>
+    <nav aria-label="Main navigation"><a href="#resources">Resources</a><a href="#tips">Study tips</a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="welcome-title">
+      <p class="eyebrow">BUILT BY STUDENTS, FOR STUDENTS</p>
+      <h1 id="welcome-title">A little help.<br>A better semester.</h1>
+      <!-- Workshop: welcome-copy issue owns this paragraph. -->
+      <p class="intro">A starting point for finding resources and sharing study tips.</p>
+      <a class="button" href="#resources">Explore resources</a>
+    </section>
+    <section id="resources" aria-labelledby="resources-title">
+      <div class="section-heading"><div><p class="eyebrow">YOUR STARTING POINT</p><h2 id="resources-title">Useful resources</h2></div>
+        <div class="filter-control"><label for="category-filter">Category</label>
+          <!-- Enabled by the category-filter issue. -->
+          <select id="category-filter" disabled aria-describedby="filter-note">
+            <option value="all">All resources</option><option value="academics">Academics</option>
+            <option value="campus">Campus life</option><option value="developer">Developer tools</option>
+          </select><small id="filter-note">Category filtering is a workshop task.</small>
+        </div>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card" data-category="academics"><span class="tag">Academics</span><h3>University website</h3><p>Start with the university website to explore academic information.</p><a href="https://www.utdallas.edu/">Visit UTD →</a></article>
+        <article class="resource-card" data-category="campus"><span class="tag">Campus life</span><h3>Find your community</h3><p>Explore student organizations and campus opportunities through the university website.</p><a href="https://www.utdallas.edu/">Explore UTD →</a></article>
+        <article class="resource-card" data-category="developer"><span class="tag">Developer tools</span><h3>MDN Web Docs</h3><p>Read examples and explanations of HTML, CSS, and JavaScript.</p><a href="https://developer.mozilla.org/">Explore MDN →</a></article>
+        <!-- Workshop: add-developer-resource issue adds a card here. -->
+      </div>
+    </section>
+    <section id="tips" class="tips-panel" aria-labelledby="tips-title">
+      <p class="eyebrow">SMALL HABITS, BIG DIFFERENCE</p><h2 id="tips-title">Study smarter</h2>
+      <!-- Workshop: study-tips issue owns this list. -->
+      <ul id="study-tips"><li>Break a large assignment into smaller tasks.</li><li>Try explaining a concept without looking at your notes.</li></ul>
+      <div class="tip-generator"><p id="random-tip" aria-live="polite">Start with one small task today.</p>
+        <button id="tip-button" type="button" disabled>Give me a study tip</button>
+        <small id="tip-note">Random tips are a workshop task.</small>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>A student-made workshop project. Not an official UTD website.</p>
+    <!-- Organizer: replace this URL before the workshop. -->
+    <a href="https://github.com/OWNER/REPOSITORY">Contribute on GitHub</a>
+    <!-- Workshop: back-to-top issue adds a link here. -->
+  </footer>
+</body>
+</html>
