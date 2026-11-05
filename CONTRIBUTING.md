@@ -1,60 +1,45 @@
 # Contributing
 
-Welcome! Coding, design, writing, and documentation contributions all count.
+Welcome! Everything here happens on the GitHub website. You do not need to install
+anything or clone this repository. You only need a GitHub account with a verified email.
 Be kind and specific in comments and reviews. Ask for help if you get stuck.
 
 ## 1. Claim one issue
 
-Choose an unclaimed issue labeled `workshop` and `good first issue`.
-Comment: “I'd like to work on this issue. May I take it?”
-Wait for an organizer to reply with approval. The organizer will mark it claimed.
-Do not start an issue already claimed by another participant.
+Choose an open issue labeled `good first issue` that has no assignee and no claim comment.
+Comment: “I'd like to work on this issue.”
+You can start right away. The first person to comment gets the issue, and an organizer
+will assign it to you.
 
-## 2. Create your working copy
+## 2. Edit the file
 
-Fork the organizer's repository to your GitHub account. Copy your fork's clone URL.
-Run these commands, replacing YOUR_USERNAME and REPOSITORY with your values:
+Open the file named in your issue and click the pencil icon (**Edit this file**).
+If GitHub asks, click **Fork this repository**. This makes your own copy.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/REPOSITORY.git
-cd REPOSITORY
-git switch -c add-resource-card
-```
+Find your slot, such as `CARD 04` or `TIP 02`, and follow your issue.
+Change only your slot. For a card or tip, delete the word `hidden` from your slot,
+or your change will not appear on the site.
 
-Use a short branch name matching your issue. If Git needs your commit identity,
-configure your name and preferred commit email before committing; ask an organizer for help.
-For a documentation-only change, you may instead edit a file in your fork using
-GitHub's browser editor and commit to a new branch.
+## 3. Propose your change
 
-## 3. Make and check the change
+Click **Commit changes...**, write a short message such as `Add library resource card`,
+and click **Propose changes**. GitHub creates a branch in your fork for you.
 
-Follow your issue's acceptance criteria. Edit only the relevant files and section.
-Open `index.html` in a browser and refresh after saving. Try your feature and
-check that existing content still works. For documentation, use Markdown preview.
-Do not commit unrelated files, editor settings, secrets, or generated archives.
+## 4. Open a pull request
 
-## 4. Commit and push
+GitHub now shows the pull request form. Use a descriptive title and say what you changed.
+Include `Closes #ISSUE_NUMBER`, replacing ISSUE_NUMBER with your issue's number.
+Click **Create pull request**.
 
-Example for an HTML change (stage only the files you intentionally edited):
+## 5. Respond to review
 
-```bash
-git status
-git diff
-git add index.html
-git commit -m "Add a developer resource card"
-git push -u origin add-resource-card
-```
+An organizer reviews your pull request. If they ask for a change, open your pull request,
+click your branch name near the top, and open the same file from there. Edit it, then
+commit directly to that same branch. The pull request updates automatically.
+If you see a merge conflict, ask an organizer for help.
 
-## 5. Open a pull request
+## 6. See your change live
 
-Open a PR from your fork's feature branch to the organizer's original repository
-and its default branch. Check the destination carefully.
-Use a descriptive title, explain the change, and say how you checked it.
-Include `Closes #ISSUE_NUMBER`, replacing ISSUE_NUMBER with the actual GitHub issue
-number, not the workshop file's numeric prefix. Include a screenshot for visual changes.
-
-## 6. Respond to review
-
-Read the review and make requested adjustments on the same branch. Commit and push
-again; the existing PR updates automatically. The organizer reviews and merges it.
-If you see a merge conflict, ask an organizer to help rather than overwriting others' work.
+After your pull request is merged, wait a minute or two and open the
+[live site](https://awesomness560.github.io/demo-pull-request/). Refresh until your
+change appears, then check your issue's checklist. Congratulations, you contributed!
